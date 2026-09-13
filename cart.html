@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameStore - Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Created by Islam and Bekzat -->
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html">GameStore</a>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Store</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="cart.html" class="active">Cart</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="intro">
+        <h1>Your Cart</h1>
+        <p>Review your games and complete your order.</p>
+    </section>
+
+
+    <section>
+
+        <h2>Selected Games</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Game</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Cyber Quest</td>
+                    <td>Action</td>
+                    <td>$19.99</td>
+                </tr>
+
+                <tr>
+                    <td>Dragon Realm</td>
+                    <td>RPG</td>
+                    <td>$29.99</td>
+                </tr>
+
+                <tr>
+                    <td>Space Raiders</td>
+                    <td>Sci-Fi</td>
+                    <td>$24.99</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <p class="total">Total: <strong>$74.97</strong></p>
+
+    </section>
+
+
+    <section class="checkout">
+
+        <h2>Checkout</h2>
+
+        <form id="checkout-form" action="#" method="post">
+
+            <label for="name">Name</label>
+            <input type="text"
+                   id="name"
+                   name="name"
+                   placeholder="Enter your name"
+                   required>
+
+
+            <label for="email">Email</label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="Enter your email"
+                   required>
+
+
+            <label for="country">Country</label>
+
+            <select id="country" name="country">
+                <option value="kazakhstan">Kazakhstan</option>
+                <option value="usa">USA</option>
+                <option value="uk">United Kingdom</option>
+                <option value="other">Other</option>
+            </select>
+
+
+            <p>Payment Method</p>
+
+            <label class="radio">
+                <input type="radio" name="payment" value="card" checked>
+                Credit Card
+            </label>
+
+            <label class="radio">
+                <input type="radio" name="payment" value="kaspi">
+                Kaspi
+            </label>
+
+            <label class="radio">
+                <input type="radio" name="payment" value="paypal">
+                PayPal
+            </label>
+
+
+            <label for="message">Additional Message</label>
+
+            <textarea id="message"
+                      name="message"
+                      rows="5"
+                      placeholder="Write a message..."></textarea>
+
+
+            <button type="submit">Place Order</button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>&copy; 2026 GameStore. Team: Islam, Bekzat</p>
+</footer>
+
+</body>
+</html>
