@@ -4,55 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>GameStore - Cart</title>
-
     <link rel="stylesheet" href="style.css">
-
-    <!-- Created by Islam and Bekzat -->
 </head>
 
 <body>
 
-<header>
-    <div class="logo">
-        <a href="index.html">GameStore</a>
-    </div>
+<div class="page">
 
-    <nav>
+    <header>
+
+        <div class="logo">
+            <a href="index.html">GameStore</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Store</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="cart.html" class="active">Cart</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <aside class="sidebar">
+
+        <h3>Cart Menu</h3>
+
         <ul>
-            <li><a href="index.html">Store</a></li>
-            <li><a href="catalog.html">Catalog</a></li>
-            <li><a href="cart.html" class="active">Cart</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li>Selected Games</li>
+            <li>Checkout</li>
+            <li>Payment</li>
         </ul>
-    </nav>
-</header>
+
+    </aside>
 
 
-<main>
+    <main>
 
-    <section class="intro">
-        <h1>Your Cart</h1>
-        <p>Review your games and complete your order.</p>
-    </section>
+        <section class="intro">
+            <h1>Your Cart</h1>
+            <p>Review your games and complete your order.</p>
+        </section>
 
 
-    <section>
+        <section>
 
-        <h2>Selected Games</h2>
+            <h2>Selected Games</h2>
 
-        <table>
+            <table>
 
-            <thead>
+                <thead>
                 <tr>
                     <th>Game</th>
                     <th>Category</th>
                     <th>Price</th>
                 </tr>
-            </thead>
+                </thead>
 
-            <tbody>
+                <tbody>
+
                 <tr>
                     <td>Cyber Quest</td>
                     <td>Action</td>
@@ -70,85 +84,87 @@
                     <td>Sci-Fi</td>
                     <td>$24.99</td>
                 </tr>
-            </tbody>
 
-        </table>
+                </tbody>
 
-        <p class="total">Total: <strong>$74.97</strong></p>
+            </table>
 
-    </section>
+            <p class="total">
+                Total: <strong>$74.97</strong>
+            </p>
 
-
-    <section class="checkout">
-
-        <h2>Checkout</h2>
-
-        <form id="checkout-form" action="#" method="post">
-
-            <label for="name">Name</label>
-            <input type="text"
-                   id="name"
-                   name="name"
-                   placeholder="Enter your name"
-                   required>
+        </section>
 
 
-            <label for="email">Email</label>
-            <input type="email"
-                   id="email"
-                   name="email"
-                   placeholder="Enter your email"
-                   required>
+        <section class="checkout">
+
+            <h2>Checkout</h2>
+
+            <form id="checkout-form">
+
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required>
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <label for="country">Country</label>
+
+                <select id="country">
+                    <option>Kazakhstan</option>
+                    <option>USA</option>
+                    <option>United Kingdom</option>
+                    <option>Other</option>
+                </select>
 
 
-            <label for="country">Country</label>
+                <p>Payment Method</p>
 
-            <select id="country" name="country">
-                <option value="kazakhstan">Kazakhstan</option>
-                <option value="usa">USA</option>
-                <option value="uk">United Kingdom</option>
-                <option value="other">Other</option>
-            </select>
+                <label class="radio">
+                    <input type="radio" name="payment" checked>
+                    Credit Card
+                </label>
 
+                <label class="radio">
+                    <input type="radio" name="payment">
+                    Kaspi
+                </label>
 
-            <p>Payment Method</p>
-
-            <label class="radio">
-                <input type="radio" name="payment" value="card" checked>
-                Credit Card
-            </label>
-
-            <label class="radio">
-                <input type="radio" name="payment" value="kaspi">
-                Kaspi
-            </label>
-
-            <label class="radio">
-                <input type="radio" name="payment" value="paypal">
-                PayPal
-            </label>
+                <label class="radio">
+                    <input type="radio" name="payment">
+                    PayPal
+                </label>
 
 
-            <label for="message">Additional Message</label>
+                <label for="message">Additional Message</label>
 
-            <textarea id="message"
-                      name="message"
-                      rows="5"
-                      placeholder="Write a message..."></textarea>
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Write a message..."></textarea>
+
+                <button type="submit">Place Order</button>
+
+            </form>
+
+        </section>
+
+    </main>
 
 
-            <button type="submit">Place Order</button>
+    <footer>
+        <p>&copy; 2026 GameStore. Team: Islam, Bekzat</p>
+    </footer>
 
-        </form>
-
-    </section>
-
-</main>
-
-
-<footer>
-    <p>&copy; 2026 GameStore. Team: Islam, Bekzat</p>
-</footer>
+</div>
 
 </body>
 </html>

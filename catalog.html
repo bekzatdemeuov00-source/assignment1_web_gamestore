@@ -4,141 +4,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>GameStore - Catalog</title>
-
     <link rel="stylesheet" href="style.css">
-
-    <!-- Created by Islam and Bekzat -->
 </head>
 
 <body>
 
-<header>
-    <div class="logo">
-        <a href="index.html">GameStore</a>
-    </div>
+<div class="page">
 
-    <nav>
+    <header>
+        <div class="logo">
+            <a href="index.html">GameStore</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Store</a></li>
+                <li><a href="catalog.html" class="active">Catalog</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <aside class="sidebar">
+        <h3>Genres</h3>
+
         <ul>
-            <li><a href="index.html">Store</a></li>
-            <li><a href="catalog.html" class="active">Catalog</a></li>
-            <li><a href="cart.html">Cart</a></li>
-            <li><a href="about.html">About Us</a></li>
-        </ul>
-    </nav>
-</header>
-
-
-<main>
-
-    <section class="intro">
-        <h1>Game Catalog</h1>
-        <p>Find your next game by genre or title.</p>
-    </section>
-
-
-    <section class="catalog-tools">
-
-        <form id="search-form">
-            <input type="text" placeholder="Search for a game">
-            <button type="submit">Search</button>
-        </form>
-
-        <h2>Categories</h2>
-
-        <ul class="category-list">
             <li>Action</li>
             <li>RPG</li>
             <li>Adventure</li>
             <li>Strategy</li>
             <li>Simulation</li>
         </ul>
+    </aside>
 
-    </section>
+
+    <main>
+
+        <section class="intro">
+            <h1>Game Catalog</h1>
+            <p>Find your next game by genre or title.</p>
+        </section>
 
 
-    <section>
+        <section class="catalog-tools">
 
-        <h2>Available Games</h2>
+            <form id="search-form">
+                <input type="text" placeholder="Search for a game">
+                <button type="submit">Search</button>
+            </form>
 
-        <div class="games-grid">
+        </section>
 
-            <div class="game-card">
-                <img src="images/game1.jpg" alt="Cyber Quest game cover">
-                <h3>Cyber Quest</h3>
-                <p>Action | Cyberpunk</p>
-                <strong>$19.99</strong>
-                <br>
-                <button>Add to Cart</button>
+
+        <section>
+
+            <h2>Available Games</h2>
+
+            <div class="games-grid">
+
+                <div class="game-card">
+                    <img src="images/game1.jpg" alt="Cyber Quest">
+                    <h3>Cyber Quest</h3>
+                    <p>Action | Cyberpunk</p>
+                    <strong>$19.99</strong>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="game-card">
+                    <img src="images/game2.jpg" alt="Dragon Realm">
+                    <h3>Dragon Realm</h3>
+                    <p>RPG | Fantasy</p>
+                    <strong>$29.99</strong>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="game-card">
+                    <img src="images/game3.jpg" alt="Space Raiders">
+                    <h3>Space Raiders</h3>
+                    <p>Action | Sci-Fi</p>
+                    <strong>$24.99</strong>
+                    <button>Add to Cart</button>
+                </div>
+
             </div>
 
-            <div class="game-card">
-                <img src="images/game2.jpg" alt="Dragon Realm game cover">
-                <h3>Dragon Realm</h3>
-                <p>RPG | Fantasy</p>
-                <strong>$29.99</strong>
-                <br>
-                <button>Add to Cart</button>
+        </section>
+
+
+        <section class="gallery-section">
+
+            <h2>Game Gallery</h2>
+
+            <div class="gallery">
+
+                <div class="gallery-item">
+                    <img src="images/game1.jpg" alt="Game">
+                    <p>Cyber Quest</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/game2.jpg" alt="Game">
+                    <p>Dragon Realm</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/game3.jpg" alt="Game">
+                    <p>Space Raiders</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/game4.jpg" alt="Game">
+                    <p>GTA VI</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/game5.jpg" alt="Game">
+                    <p>Baldur's Gate 3</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/game6.jpg" alt="Game">
+                    <p>Minecraft</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/game7.jpg" alt="Game">
+                    <p>Elden Ring</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/game8.jpg" alt="Game">
+                    <p>The Witcher 3</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/game9.jpg" alt="Game">
+                    <p>Hollow Knight</p>
+                </div>
+
             </div>
 
-            <div class="game-card">
-                <img src="images/game3.jpg" alt="Space Raiders game cover">
-                <h3>Space Raiders</h3>
-                <p>Action | Sci-Fi</p>
-                <strong>$24.99</strong>
-                <br>
-                <button>Add to Cart</button>
-            </div>
+        </section>
 
-            <div class="game-card">
-                <img src="images/game4.jpg" alt="GTA VI game cover">
-                <h3>GTA VI</h3>
-                <p>Action | Open World</p>
-                <strong>$69.99</strong>
-                <br>
-                <button>Add to Cart</button>
-            </div>
-
-        </div>
-
-    </section>
+    </main>
 
 
-    <section class="steps">
+    <footer>
+        <p>&copy; 2026 GameStore. Team: Islam, Bekzat</p>
+    </footer>
 
-        <h2>How to Choose a Game</h2>
-
-        <ol>
-            <li>Choose a game genre.</li>
-            <li>Check the game description and price.</li>
-            <li>Add the game to your cart.</li>
-            <li>Complete the checkout form.</li>
-        </ol>
-
-    </section>
-
-
-    <section class="team-member">
-
-        <h2>About the Team Member</h2>
-
-        <h3>Bekzat</h3>
-
-        <p>
-            Bekzat is responsible for the Catalog and Cart pages.
-            He focuses on the structure, layout and user interface
-            of these pages.
-        </p>
-
-    </section>
-
-</main>
-
-
-<footer>
-    <p>&copy; 2026 GameStore. Team: Islam, Bekzat</p>
-</footer>
+</div>
 
 </body>
 </html>
